@@ -1,29 +1,89 @@
 .App {
   text-align: center;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.hero {
+  width: 100%;
+  color: #333;
+}
+.title {
+  margin: 0;
+  width: 100%;
+  padding-top: 80px;
+  line-height: 1.15;
+  font-size: 48px;
   color: white;
 }
-
+.title,
+.description {
+  text-align: center;
+}
+.bg {
+  background-position: 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('https://scontent.fbkk5-6.fna.fbcdn.net/v/t31.0-8/s960x960/23275548_1672275222847343_7324575467586752655_o.jpg?_nc_cat=101&_nc_ohc=AXSgNTEEKq4AQn-AefNe1-CyQSh3dkvNI-7ZN2tsvHQbG1swFeqL65y3w&_nc_ht=scontent.fbkk5-6.fna&oh=cea7d71d9216578213123c4c90418ed1&oe=5E440673');
+  width : 100%;
+  height : 100%;
+}
+.bg2{
+  padding: 50px;
+  background-color: rgba(0,0,0,.8);
+}
+img {
+  max-width: 880px;
+  border-radius: 45%;
+  margin: 80px auto 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.row {
+  max-width: 880px;
+  margin: 70px auto 40px;
+  display: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card {
+  background-color: #2c3e50;
+  border-radius: 12px;
+  border: none;
+  color: rgb(46, 45, 45);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.card:hover {
+  border-color: #067df7;
+}
+.card h3 {
+  margin: 0;
+  color: rgb(66, 66, 66);
+  font-size: 18px;
+}
+.card p {
+  margin: 0;
+  padding: 12px 0 0;
+  font-size: 13px;
+  color: #333;
+}
 .App-link {
   color: #61dafb;
 }
