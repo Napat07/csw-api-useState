@@ -1,0 +1,22 @@
+.WeatherCard {
+  margin: auto;
+  padding: .5rem;
+   width: 19rem;
+  text-align: center;
+  animation: horizontalFlipIn 1s;
+  background-image: url('https://images.theconversation.com/files/232705/original/file-20180820-30593-1nxanpj.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip');
+}
+
+.WeatherCard-icon-container {
+  font-size: 4rem;
+  margin: 2rem 0 0;
+}
+
+.WeatherCard-icon {
+  margin: 0 0 2rem;
+}
+
+.WeatherCard-degrees {
+  font-size: 6rem;
+  margin: 0;
+}

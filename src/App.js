@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import ApiWeather from './ApiWeather';
 
 import './App.css';
 
@@ -18,16 +19,17 @@ const App = () => {
           <div className="hero">
             <header >
               <h1 className="title">Hello Napat</h1>
-              <h1 className="title">{count}</h1>
+              <h1 className="title">{count} </h1>
               <br></br>
               <button type="button" class="btn btn-danger" onClick={() => setCount(count + 1)}>Add</button>
-              <p className="description"> </p>
+              <h1 className="title"> <ApiWeather /></h1>
+               <p className="description"> </p>
               <img src="bot.jpg" alt="New" width="300" height="350"></img>
               <div className="App">
                 <a href="https://facebook.com/newnapat17" type="button" class="btn btn-primary">Facebook</a>
                 <a href="https://github.com/Napat07" type="button" class="btn btn-warning">Github</a>
                 <a href="https://medium.com/@naphat1811" type="button" class="btn btn-info">Medium</a>
-              </div>
+              </div>          
             </header>
           </div>
         </div>
